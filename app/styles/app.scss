@@ -1,0 +1,34 @@
+@use "./athlete-card.scss";
+@use "./athlete.scss";
+
+.default-font-family {
+    font-family: sans-serif;
+}
+
+.content-margin {
+    margin: 15px 10px;
+}
+
+.image-large {
+    border-radius: 50%;
+    border: 2.2px solid #c4b39a;
+    background-color: white;
+}
+
+.button {
+    height: 48px;
+    width: 178px;
+    background-color: gold;
+}
+
+.heading-3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #191919;
+}
+
+.subheading-small {
+    font-size: 16px;
+    font-weight: 400;
+    color: #757471;
+}
