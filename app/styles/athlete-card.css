@@ -1,0 +1,30 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  transition: 0.3s;
+  padding: 10px;
+  background-color: #e6e6e6;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.data-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.athlete-data {
+  display: flex;
+  flex-flow: column;
+  gap: 5px;
+}
+
+.button-section {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.margin-right {
+  margin-right: 10px;
+}
