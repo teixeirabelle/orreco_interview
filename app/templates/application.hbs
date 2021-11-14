@@ -1,13 +1,1 @@
-<section>
-  {{#each @model.athletes as |athlete|}}
-    <div>
-      {{athlete.fullName}}
-    </div>
-    <div>{{athlete.age}}</div>
-    <LinkTo @route="athlete" @model={{athlete.id}}>
-      Select
-    </LinkTo>
-  {{/each}}
-</section>
-
 {{outlet}}

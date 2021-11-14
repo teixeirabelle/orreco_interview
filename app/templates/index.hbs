@@ -1,0 +1,11 @@
+<section>
+  <div>
+    {{#each @model.athletes as |athlete|}}
+      <div class="content-margin">
+        <AthleteCard @athlete={{athlete}} />
+      </div>
+    {{/each}}
+  </div>
+</section>
+
+{{outlet}}
