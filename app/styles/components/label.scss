@@ -1,0 +1,8 @@
+@use "../standards.scss" as standard;
+
+.timeline-date {
+    padding: 4px 15px;
+    background: standard.$gold;
+    border-radius: 12px;
+    color: standard.$black;
+}

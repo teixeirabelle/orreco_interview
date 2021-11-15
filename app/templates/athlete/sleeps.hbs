@@ -1,14 +1,8 @@
 <div class="container">
   <div class="timeline">
-    <div class="timeline-month">
-      August, 2018
-      <span>3 Entries</span>
-    </div>
     {{#each @model.sleeps as |sleep|}}
       <div class="timeline-section">
-        <div class="timeline-date">
-          {{unix sleep.startDateSec}}
-        </div>
+        <Label class="timeline-date" @value={{unix sleep.startDateSec}} />
         <div class="row">
           <div class="col-sm-4">
             <div class="timeline-box">
@@ -24,20 +18,6 @@
                 <div class="box-item"><strong>Loss Type</strong>: A/C Leak</div>
                 <div class="box-item"><strong>Loss Territory</strong>: Texas</div>
                 <div class="box-item"><strong>Start Date</strong>: 08/22/2018</div>
-              </div>
-              <div class="box-footer">- Tyler</div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="timeline-box">
-              <div class="box-title">
-                <i class="fa fa-pencil text-info" aria-hidden="true"></i>
-                Job Edited
-              </div>
-              <div class="box-content">
-                <a href="" class="btn btn-xs btn-default pull-right">Details</a>
-                <div class="box-item"><strong>Project Manager</strong>: Marlyn</div>
-                <div class="box-item"><strong>Supervisor</strong>: Carol</div>
               </div>
               <div class="box-footer">- Tyler</div>
             </div>

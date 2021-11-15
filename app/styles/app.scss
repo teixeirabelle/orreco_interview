@@ -1,6 +1,7 @@
 @use "./athlete-card.scss";
 @use "./athlete.scss";
 @use "./athlete/sleeps.scss";
+@use "./components/label.scss";
 @use "./standards.scss" as standard;
 
 .default-font-family {
