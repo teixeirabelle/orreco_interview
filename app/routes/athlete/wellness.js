@@ -5,9 +5,9 @@ import { inject as service } from "@ember/service";
 export default class AthleteWellnessRoute extends Route {
   @service("athlete") athleteService;
 
-  model() {
+  async model() {
     //Get wellness data and sort in descending order.
-    let wellnessLogs = this.store
+    let wellnessLogs = await this.store
       .query("wellnessLogs", {
         query: (ref) =>
           ref.where(
