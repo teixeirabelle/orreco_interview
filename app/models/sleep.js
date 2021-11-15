@@ -8,5 +8,7 @@ export default class SleepModel extends Model {
   @attr("number") remSleepDuration;
   @attr("number") totalSleepDuration;
 
-  // ...
+  get startDateSec() {
+    return this.startDateUTCMillis / 1000;
+  }
 }

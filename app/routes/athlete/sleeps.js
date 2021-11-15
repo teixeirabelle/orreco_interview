@@ -8,11 +8,17 @@ export default class AthleteSleepRoute extends Route {
   model() {
     let athlete_id;
 
+    //Get sleeps data and sort in descending order.
     let sleeps = this.store
-      .query("sleeps", {
-        query: (ref) => ref.where("athleteDocRef", "==", athlete_id),
+      .query("sleep", {
+        query: (ref) =>
+          ref.where(
+            "athleteDocRef",
+            "==",
+            this.athleteService.currentAthleteId
+          ),
       })
-      .then((sleeps) => sleeps.sortBy("startDateUTCMillis"));
+      .then((sleeps) => sleeps.sortBy("startDateUTCMillis").reverse());
 
     return RSVP.hash({
       sleeps,
