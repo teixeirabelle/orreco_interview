@@ -1,8 +1,12 @@
 import Route from "@ember/routing/route";
 import RSVP from "rsvp";
+import { inject as service } from "@ember/service";
+
 export default class AthleteSleepRoute extends Route {
-  model(params) {
-    const { athlete_id } = params;
+  @service("athlete") athleteService;
+
+  model() {
+    let athlete_id;
 
     let sleeps = this.store
       .query("sleeps", {
