@@ -1,0 +1,17 @@
+@use "./standards.scss" as standard;
+
+.header {
+    background: standard.$titanium;
+    min-height: 70px;
+    height: auto;
+    display: flex;
+
+    .content {
+        margin: 10px;
+        display: flex;
+
+        img {
+            margin: 10px;
+        }
+    }
+}
