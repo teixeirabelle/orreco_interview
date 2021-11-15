@@ -8,8 +8,4 @@ export default class WellnessLogsModel extends Model {
   @attr("number") muscleSoreness;
   @attr("number") sleep;
   @attr("number") stress;
-
-  get startDateSec() {
-    return this.logDateUTCMillis / 1000;
-  }
 }

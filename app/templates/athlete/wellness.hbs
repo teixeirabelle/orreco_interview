@@ -2,7 +2,10 @@
   <div class="timeline">
     {{#each @model.wellnessLogs as |wellness|}}
       <div class="timeline-section">
-        <Label class="timeline-date" @value={{unix wellness.startDateSec}} />
+        <Label
+          class="timeline-date"
+          @value={{moment-format wellness.startDateUTCMillis "DD/MM/YYYY"}}
+        />
         <div class="row">
           <div class="timeline-box">
             <div class="box-content">
