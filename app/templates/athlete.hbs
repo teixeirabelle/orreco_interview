@@ -1,1 +1,63 @@
+<header class="header">
+  <div class="content">
+    <span class="loading-spinner"></span>
+    {{!-- <button type="button" class="button" {{on "click" (fn this.goBack 'athlete')}}> --}}
+      {{!-- <FaIcon @icon="chevron-left" /> --}}
+    {{!-- </button> --}}
+    <img
+      class="image-large margin-right"
+      width="56"
+      height="56"
+      src={{if
+        @model.athlete.photoUrl
+        @model.athlete.photoUrl
+        "/assets/no-photo.png"
+      }}
+      alt="athlete_avatar"
+    />
+    <div class="heading-3 athlete-data">
+      <div>
+        Name:
+        <span class="subheading-small">
+          {{@model.athlete.fullName}}
+        </span>
+      </div>
+      <div>Age:
+        <span class="subheading-small">
+          {{@model.athlete.age}}
+        </span></div>
+      <div>Heigh:
+        <span class="subheading-small">
+          {{@model.athlete.height}}
+          {{@model.athlete.heightMeasure}}
+        </span>
+      </div>
+      <div>Sport:
+        <span class="subheading-small">
+          {{@model.athlete.sport}}
+        </span></div>
+      <div>Weight:
+        <span class="subheading-small">
+          {{@model.athlete.weight}}
+          {{@model.athlete.weightMeasure}}
+        </span>
+      </div>
+      {{#if @model.athlete.tour}}
+        <div>Tour:
+          <span class="subheading-small">
+            {{@model.athlete.tour}}
+          </span>
+        </div>
+      {{/if}}
+      {{#if @model.athlete.team}}
+        <div>Team:
+          <span class="subheading-small">
+            {{@model.athlete.team}}
+          </span>
+        </div>
+      {{/if}}
+    </div>
+
+  </div>
+</header>
 {{outlet}}
