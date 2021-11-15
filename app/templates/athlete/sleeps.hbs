@@ -4,22 +4,24 @@
       <div class="timeline-section">
         <Label class="timeline-date" @value={{unix sleep.startDateSec}} />
         <div class="row">
-          <div class="col-sm-4">
-            <div class="timeline-box">
-              <div class="box-title">
-                <i class="fa fa-asterisk text-success" aria-hidden="true"></i>
-                Job Created
+          <div class="timeline-box">
+            <div class="box-content">
+              <div class="content-margin">
+                Deep sleep:
+                {{sleep.deepSleepDuration}}
               </div>
-              <div class="box-content">
-                <div class="content-margin">
-                  {{sleep.deepSleepDuration}}
-                </div>
-                <a href="" class="btn btn-xs btn-default pull-right">Details</a>
-                <div class="box-item"><strong>Loss Type</strong>: A/C Leak</div>
-                <div class="box-item"><strong>Loss Territory</strong>: Texas</div>
-                <div class="box-item"><strong>Start Date</strong>: 08/22/2018</div>
+              <div class="content-margin">
+                Light sleep:
+                {{sleep.lightSleepDuration}}
               </div>
-              <div class="box-footer">- Tyler</div>
+              <div class="content-margin">
+                Rem sleep:
+                {{sleep.remSleepDuration}}
+              </div>
+              <div class="content-margin total-sleep">
+                Total:
+                {{sleep.totalSleepDuration}}
+              </div>
             </div>
           </div>
         </div>
