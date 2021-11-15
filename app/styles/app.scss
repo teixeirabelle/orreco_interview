@@ -1,9 +1,10 @@
 @use "./athlete-card.scss";
 @use "./athlete.scss";
 @use "./athlete/sleeps.scss";
+@use "./standards.scss" as standard;
 
 .default-font-family {
-    font-family: sans-serif;
+    font-family: standard.$sans-serif;
 }
 
 .content-margin {
@@ -12,24 +13,24 @@
 
 .image-large {
     border-radius: 50%;
-    border: 2.2px solid #c4b39a;
-    background-color: white;
+    border: 2.2px solid standard.$palladium-wg;
+    background-color: standard.$white;
 }
 
 .button {
     height: 48px;
     width: 178px;
-    background-color: gold;
+    background-color: standard.$gold;
 }
 
 .heading-3 {
     font-size: 16px;
     font-weight: 500;
-    color: #191919;
+    color: standard.$obsidian;
 }
 
 .subheading-small {
     font-size: 16px;
     font-weight: 400;
-    color: #757471;
+    color: standard.$nickel;
 }
