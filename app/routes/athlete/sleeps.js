@@ -6,8 +6,6 @@ export default class AthleteSleepRoute extends Route {
   @service("athlete") athleteService;
 
   model() {
-    let athlete_id;
-
     //Get sleeps data and sort in descending order.
     let sleeps = this.store
       .query("sleep", {
@@ -22,7 +20,6 @@ export default class AthleteSleepRoute extends Route {
 
     return RSVP.hash({
       sleeps,
-      athlete_id,
     });
   }
 }
