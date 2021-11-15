@@ -45,10 +45,6 @@ module.exports = function (environment) {
     },
   };
 
-  console.log("im here");
-  console.log("env", environment);
-  console.log("firebase", ENV.firebase);
-
   if (environment === "development") {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
