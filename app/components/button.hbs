@@ -1,0 +1,10 @@
+<button
+  class="button-nav"
+  {{on "click" (fn this.goTo @route @model)}}
+  type="button"
+>
+  {{@text}}
+  <FaIcon @icon="chevron-right" />
+</button>
+
+{{yield}}

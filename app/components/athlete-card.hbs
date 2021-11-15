@@ -51,11 +51,11 @@
     </div>
   </div>
   <div class="button-section">
-    <button type="button">
-      <LinkTo @route="athlete.sleeps" @model={{@athlete.id}}>
-        Select
-      </LinkTo>
-    </button>
+    <Button
+      @text="Sleep data"
+      @route="athlete.sleeps"
+      @model="{{@athlete.id}}"
+    />
   </div>
 </section>
 

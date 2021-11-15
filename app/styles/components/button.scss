@@ -1,0 +1,15 @@
+@use "../standards.scss" as standard;
+
+.button-nav {
+    width: 140px;
+    height: 48px;
+    background-color: standard.$gold;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    &:focus {
+        background-color: standard.$button-color;
+    }
+}
